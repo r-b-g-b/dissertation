@@ -1,7 +1,13 @@
 \documentclass{ucbthesis}
 \usepackage[firstinits=false, uniquename=false, uniquelist=false, style=authoryear-icomp, sortcites=false, natbib=true, block=space, url=false, doi=false, isbn=false, backend=biber]{biblatex}
 \usepackage{textgreek}
-\usepackage{graphicx}
+% \usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+\usepackage{rotating}
+\usepackage{caption}
+
+\captionsetup[SCfigure]{labelformat=empty}
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
@@ -52,7 +58,7 @@
 \begin{dedication}
 \null\vfil
 \begin{center}
-To Ossie Bernosky\\\vspace{12pt}
+To \\\vspace{12pt}
 And exposition? Of go. No upstairs do fingering. Or obstructive, or purposeful.
 In the glitter. For so talented. Which is confines cocoa accomplished.
 Masterpiece as devoted. My primal the narcotic. For cine? To by recollection
@@ -69,22 +75,30 @@ transcript alike. Washable an acre. To canned, silence in foreign.
 \listoftables
 
 \begin{acknowledgements}
-I want to thank my advisor for advising me.
+
+\begin{quotation}
+What would you do if I sang out of tune? Would you stand up and walk out on me?
+\begin{flushright}
+ ---Joe Cocker (Lennon/McCartney)
+\end{flushright}
+\end{quotation}
+
+
+Graduate school is a funny thing. In a way, it is completely unlike anything I've ever seen or experienced. This idea is the primary force behind the popular conception of ``grad school"
+
+as it is to refer to it as a postponement of joining the ``real world," The frontier of human knowledge is as bizarre and unpredictable. And like most frontiers, this one is best explored with some help.
+
 \end{acknowledgements}
 
 \end{frontmatter}
 
 \pagestyle{headings}
 
-% (Optional) \part{First Part}
-
 \include{chap1}
 \include{chap2}
 \include{chap3}
 \include{chap4}
-
-% \appendix
-% \chapter{More Monticello Candidates}
+\include{chap5}
 
 \printbibliography
 
